@@ -1,5 +1,5 @@
 -- 基础配置
--- require("basic")
+require("basic")
 -- 快捷键映射
 -- require("keybindings")
 -- Packer插件管理
@@ -10,13 +10,17 @@ require('plugins')
 -- 自动命令
 -- require("autocmds")
 -- 插件配置
--- require("plugin-config.nvim-tree")
+require("plugin-config.nvim-tree")
 -- require("plugin-config.bufferline")
 -- require("plugin-config.lualine")
 -- require("plugin-config.telescope")
 -- require("plugin-config.dashboard")
 -- require("plugin-config.project")
--- require("plugin-config.nvim-treesitter")
+require("plugin-config.nvim-treesitter")
+require("plugin-config.nvim-scrollbar")
+require("plugin-config.nvim-web-devicons")
+require('color-config.tokyodark')
+require('color-config.material')
 -- require("plugin-config.indent-blankline")
 -- require("plugin-config.toggleterm")
 -- require("plugin-config.surround")
@@ -30,7 +34,8 @@ require('plugins')
 -- 格式化
 -- require("lsp.formatter")
 -- require("lsp.null-ls")
-
+require('lsp-config.lspinstall')
+require('lsp-config.lspconfig')
 -- utils
 -- 复制到windows剪贴板
 -- require('utils.fix-yank')

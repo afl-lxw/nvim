@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "C:\\Users\\LIUXIA~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?.lua;C:\\Users\\LIUXIA~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\share\\lua\\5.1\\?\\init.lua;C:\\Users\\LIUXIA~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?.lua;C:\\Users\\LIUXIA~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\luarocks\\rocks-5.1\\?\\init.lua"
-local install_cpath_pattern = "C:\\Users\\LIUXIA~1\\AppData\\Local\\Temp\\nvim\\packer_hererocks\\2.1.0-beta3\\lib\\lua\\5.1\\?.so"
+local package_path_str = "/Users/liuxiaowen/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/liuxiaowen/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/liuxiaowen/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/liuxiaowen/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/Users/liuxiaowen/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,42 +76,42 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["gruvbox.nvim"] = {
     loaded = true,
-    path = "D:\\neovim\\config\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
+    path = "/Users/liuxiaowen/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["lush.nvim"] = {
     loaded = true,
-    path = "D:\\neovim\\config\\nvim-data\\site\\pack\\packer\\start\\lush.nvim",
+    path = "/Users/liuxiaowen/.local/share/nvim/site/pack/packer/start/lush.nvim",
     url = "https://github.com/rktjmp/lush.nvim"
   },
   ["nord.nvim"] = {
     loaded = true,
-    path = "D:\\neovim\\config\\nvim-data\\site\\pack\\packer\\start\\nord.nvim",
+    path = "/Users/liuxiaowen/.local/share/nvim/site/pack/packer/start/nord.nvim",
     url = "https://github.com/shaunsingh/nord.nvim"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "D:\\neovim\\config\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua",
+    path = "/Users/liuxiaowen/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "D:\\neovim\\config\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    path = "/Users/liuxiaowen/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "D:\\neovim\\config\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons",
+    path = "/Users/liuxiaowen/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "D:\\neovim\\config\\nvim-data\\site\\pack\\packer\\start\\packer.nvim",
+    path = "/Users/liuxiaowen/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["zephyr-nvim"] = {
     loaded = true,
-    path = "D:\\neovim\\config\\nvim-data\\site\\pack\\packer\\start\\zephyr-nvim",
+    path = "/Users/liuxiaowen/.local/share/nvim/site/pack/packer/start/zephyr-nvim",
     url = "https://github.com/glepnir/zephyr-nvim"
   }
 }

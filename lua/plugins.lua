@@ -2,7 +2,8 @@
 
 
 
-return require('packer').startup(function()
+return require('packer').startup({
+  function()
     -- Packer can manage itself
     use 'wbthomason/packer.nvim'
     -- gruvbox theme
@@ -21,5 +22,16 @@ return require('packer').startup(function()
     }
     -- treesitter 
     use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-
-end)
+  end,
+  config = {
+    git = {
+      default_url_format = 'git@github.com:%s'
+    },
+		-- max_jobs = 16,
+		display = {
+			open_fn = function()
+				return require('packer.util').float({ border = 'single' })
+			end
+		}
+	}
+})
